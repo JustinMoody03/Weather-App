@@ -6,7 +6,7 @@ let button = document.getElementById("go");
 
 function searchCityName() {
     let cityName = input.value;
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${apikey}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${apikey}`)
     .then(function(res){
     return res.json()
     })
